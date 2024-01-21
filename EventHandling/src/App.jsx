@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Card from '../components/Card'
+import Card2 from '../components/Card2';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
+  function handleclick(){
+    alert("Click handled");
+  }
+  function handleSelect(){
+    alert("You just clicked on card");
+  }
+  function handleSelect2(data){
+    alert("you just selected "+data)
+  }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Let Us learn Event handling</h1>
+      <button onClick={handleclick}>Click Me!</button>
+      {/* You can listen for evrnts on Custom Components By passing event hndling function as a prompt */}
+      <Card onSelect={handleSelect}></Card>
+      <Card2 onSelect2={()=>handleSelect2("card2")} ></Card2>
     </>
   )
 }
