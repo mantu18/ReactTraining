@@ -4,11 +4,13 @@ import Props from "./Components/Props";
 import Props2 from "./Components/Props2";
 import Props3 from "./Components/Props3";
 import Props4 from "./Components/Props4";
+import SnippetCard from "./Components/SnippetCard";
 import propImage from './assets/Images/props.png'
 function App() {
   const obj={
     heading: "Using props you can pass a object",
     body: "pass as: head = {obj.head} body = {obj.body} "
+   
   };
   const obj2={
     heading: "You can also pass a object as {...obj2} ",
@@ -30,6 +32,7 @@ function App() {
     {
       heading: "You can also pass a object as list item ",
       body: "pass as: {...Items[1]}"
+     
     }
   ]
   return (
@@ -38,6 +41,7 @@ function App() {
       <div className="parent">
       <div className="imgContainer">
           <img id="propImage" src={propImage}/>
+          <SnippetCard></SnippetCard>
       </div>
       <div className="xyz">
         <Container></Container>
