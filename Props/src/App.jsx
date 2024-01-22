@@ -4,6 +4,7 @@ import Props from "./Components/Props";
 import Props2 from "./Components/Props2";
 import Props3 from "./Components/Props3";
 import Props4 from "./Components/Props4";
+import Props5 from "./Components/Props5";
 import SnippetCard from "./Components/SnippetCard";
 import propImage from './assets/Images/props.png'
 function App() {
@@ -56,6 +57,7 @@ function App() {
         <Props2 heading={obj3.heading} body={obj3.body}></Props2>
         <Props3 {...obj4}></Props3>
         <Props4 body="only passing body"></Props4>
+        <Props5 passingProp={<Props/>}></Props5>
       </div>
       
       </div>
