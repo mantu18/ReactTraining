@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color:#ffffff;  
+}
+.xyz{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  width: 50%;
+}
+li{
+  gap:15px;
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+}
+.imgContainer{
+  position: fixed;
+  background-position-x: left;
+  width: 50%;
+  left: 0;
+  top:150px;
+  z-index: 99;
+}
+#propImage{
+  width: 90%;
+  
+}
+.xyz{
+  margin-top: 20%;
+  margin-left: 80%;
+}
+
+h1{
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  margin-bottom: 30px;
+  }
