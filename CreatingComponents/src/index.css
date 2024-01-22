@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 1%, rgba(204,70,252,1) 89%);  
 }
 
 h1 {
